@@ -1,24 +1,23 @@
 fun main(args: Array<String>) {
    /* 2 - Ler 10 números e imprimir quantos são pares e quantos são ímpares.*/
 
-    var cont:Int =0
-    var armaz:Int =0
-    var numpar:Int =0
-    var numimpar:Int =0
+    var par = 0
+    var impar = 0
 
+    for(i in 1..10){
+        println("Digite 10 numeros: ")
+        var num = readLine()!!.toInt()
 
-
-    while (cont < 10) {
-        println("informe um numero: ")
-        armaz = readLine()!!.toInt()
-        cont++
-        if (armaz % 2 == 0) {
-            numpar++
-        } else {
-            numimpar++
+        if(num % 2 === 0){
+            par++
+        }else{
+            impar++
         }
     }
-      println("numeros pares: $numpar e numeros impares: $numimpar")
+    println(par)
+    println(impar)
+}
+      
 
 
 

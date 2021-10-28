@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     println(par)
     println(impar)
 }
-      
+
 
 
 

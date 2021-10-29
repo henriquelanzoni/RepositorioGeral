@@ -22,11 +22,6 @@ fun main(args: Array<String>) {
     println(multiplicacao(10.0, 20.0))
     println(divisao(10.0, 20.0))
 
-
-
-
-
-
 }
     fun soma(num1: Double, num2:Double ):Double{
         return num1 + num2

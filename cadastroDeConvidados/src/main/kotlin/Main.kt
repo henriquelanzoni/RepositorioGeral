@@ -43,9 +43,12 @@ fun main(args: Array<String>) {
                 println("mostra os convidados:")
                 println(lista)
             }
+            else -> println("erro")
+
         }
 
-
+            println("desaja realizar mais alguma mudança? sim ou nao ?")
+        simNao = readLine()!!
 
 
 

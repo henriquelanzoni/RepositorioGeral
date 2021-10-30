@@ -3,14 +3,22 @@ fun main(args: Array<String>) {
 
     println("digite as 4 notas: ")
 
-    var nota1= readLine()!!.toDouble()
-    var nota2= readLine()!!.toDouble()
-    var nota3= readLine()!!.toDouble()
-    var nota4= readLine()!!.toDouble()
+    var nota1: Double = 0.0
+    var soma: Double = 0.0
+    var quant: Double = 0.0
 
-    var media = (nota1 + nota2 + nota3 + nota4) / 4
+    while (nota1 < 10.1){
+        println("digite uma nota de 0 a 10 ou digite: 11 para finalizar o calculo da media")
+        nota1= readLine()!!.toDouble()
 
-    println("Média: $media ")
+        if (nota1 < 10.1){
+            soma = soma + nota1
+            quant++
+        }
+    }
+
+
+    println("Média: ${soma/quant} ")
 
 
 }

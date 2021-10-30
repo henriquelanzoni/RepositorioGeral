@@ -14,16 +14,8 @@ fun main(args: Array<String>) {
             impar++
         }
     }
-    println(par)
-    println(impar)
+    println("quantidade de numeros pares: $par")
+    println("quantidade de numeros impares: $impar")
 }
 
 
-
-
-
-
-
-
-
-}

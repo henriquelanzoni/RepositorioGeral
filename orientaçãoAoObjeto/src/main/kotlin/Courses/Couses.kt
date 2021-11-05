@@ -1,10 +1,10 @@
-class Courses (val nomeCurso: String?, var nomeProfessor: String?, var ano: Int) {
+class Courses (private val nomeCurso: String?, private var nomeProfessor: String?, private var ano: Int) {
 
-    val listaEstudantes = mutableListOf<Student?>()
+    private val listaEstudantes = mutableListOf<Student?>()
 
     fun mostrarEstudantes(){
         for(i in listaEstudantes){
-            println(i?.nome)
+            println(i?.nomes())
         }
     }
 
@@ -36,13 +36,19 @@ class Courses (val nomeCurso: String?, var nomeProfessor: String?, var ano: Int)
     }
 
     fun melhorNota(){
-        var melhorNota = listaEstudantes[0]?.nota
+        var melhorNota = listaEstudantes[0]?.notas()
         for(i in listaEstudantes){
-            if(i?.nota!! > melhorNota!!){
-                melhorNota = i.nota
+            if(i?.notas()!! > melhorNota!!){
+                melhorNota = i.notas()
             }
         }
         println("A maior nota desse curso é: $melhorNota")
     }
 
+    fun verificarAluno(student: Student){
+        if (listaEstudantes.contains(student)){
+            println(" aluno existe")
+        }
+        else{ throw Exception("aluno nao existe")}
+    }
 }

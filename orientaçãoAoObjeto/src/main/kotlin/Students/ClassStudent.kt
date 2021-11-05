@@ -1,7 +1,7 @@
-class Student (var nome: String?, var sobrenome: String?, var ra: Int) {
+class Student ( private var nome: String?, private var sobrenome: String?, private var ra: Int) {
 
-    var nota = 0.0
-    var ano = 0
+    private var nota = 0.0
+    private var ano = 0
 
     constructor(nome: String?, sobrenome: String?, ra: Int, nota: Double) : this(nome, sobrenome, ra) {
         this.nota = nota
@@ -10,6 +10,13 @@ class Student (var nome: String?, var sobrenome: String?, var ra: Int) {
     constructor(nome: String?, sobrenome: String?, ra: Int, nota: Double, ano: Int) : this(nome, sobrenome, ra, nota) {
         this.ano = ano
     }
+    fun notas():Double{
+        var exibirNota = nota
+        return exibirNota
+    }
+    fun nomes():String{
+        var exibirNome = nome
+        return exibirNome!!}
 
     fun nomeCompleto() {
         println("$nome $sobrenome")

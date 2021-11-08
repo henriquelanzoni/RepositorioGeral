@@ -1,6 +1,6 @@
 import kotlin.math.min
 
-open class employee (var nome: String,
+abstract class employee (var nome: String,
                      var sobreNome: String,
                      var registro: Int,
                      var idade: Int,

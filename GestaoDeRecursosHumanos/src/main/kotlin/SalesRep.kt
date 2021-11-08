@@ -6,20 +6,14 @@
                       diasFerias: Int,
                       salario: Double,
                       anosTrabalhados: Int,
-                      var vendidos: Double ): employee(nome, sobreNome,
-     registro, idade, diasTrabalhados, diasFerias, salario, anosTrabalhados) {
-
-
-
+                      var vendidos: Double ): employee(nome,
+                      sobreNome, registro, idade, diasTrabalhados,
+                      diasFerias, salario, anosTrabalhados) {
 
      fun calculoComissao() {
       var comissao = 0.1 * vendidos
       return println("Comissão de vendas é: R$$comissao")
      }
-
-
-
-
 
  }
 

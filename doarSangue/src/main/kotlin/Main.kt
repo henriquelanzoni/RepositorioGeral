@@ -11,18 +11,14 @@ fun main(args: Array<String>) {
     println("informe o peso do doador:")
     peso = readLine()!!.toInt()
 
-    if (idade >= 18 && idade <60) {
-        println("idade está ok")
-        if (peso >= 45 && peso <= 120) {
-            println("peso está ok")
-        } else {
-            return println("voce nao esta ok")
+    if (idade >= 18 && idade <60 && peso >= 45) {
+        println("Apto para doar sangue")
+    } else {
+            return println("Não pode doar")
         }
     }
-    fun apto (idade:Boolean , peso:Boolean ): Boolean{
-        return apto(idade = true,peso = true)
-    }
-}
+
+
 
 
 
